@@ -1,0 +1,11 @@
+<h2>Buscar</h2>
+<input type="text" [(ngModel)]="search" placeholder="Buscar por nombre o correo">
+<ul>
+  <li *ngFor="let user of filterByUsers">{{ user.nombre }}</li>
+</ul>
+<button (click)="Buscar()">Buscar</button>
+<h2>Lista de Usuarios</h2>
+<ul>
+  <li *ngFor="let user of users">{{ user.nombre }}</li>
+</ul>
+<button (click)="RecargUsers()">Recargar</button>
